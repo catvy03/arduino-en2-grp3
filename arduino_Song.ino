@@ -21,14 +21,14 @@ int tempo = 0.25 * maintempo;
 int whole = tempo;
 int half = tempo / 2;
 int quarter = tempo / 4;
-int eigth = tempo / 8;
+int eighth = tempo / 8;
 int sixteenth = tempo / 16;
 int dothalf = 1.5 * half;
 int dotquarter = 1.5 * quarter;
-int doteigth = 1.5 * eigth;
+int doteighth = 1.5 * eighth;
 int dotsixteenth = 1.5 * sixteenth;
 int smallbreak = 200;
-int tripletbreak = eigth / 3;
+int tripletbreak = eighth / 3;
 int halfsixteenth = sixteenth / 2;
 
 //frequencies/notes
@@ -52,38 +52,40 @@ for (int i = 0; i< 3; i++){}
 //measure 39
 //triplet
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 //triplet
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);    
-//eigth note
+//eighth note
   tone(output, B4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 //dotted quarter note
   tone(output, B4);
     delay(dotquarter);
+  noTone(output);
+    delay(smallbreak)
 //quarter rest
   noTone(output);
     delay(quarter);
@@ -91,15 +93,15 @@ for (int i = 0; i< 3; i++){}
 //measure 40
 //triplet
   tone(output, a4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, a4);
-    delay(eigth);
+    delay(eihgth);
   noTone(output);
     delay(tripletbreak);
   tone(output, a4);
-    delay(eigth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 //quarter note
@@ -116,11 +118,121 @@ for (int i = 0; i< 3; i++){}
     delay(sixteenth);
   noTone(output);
     delay(halfsixteenth);
+
+//measure 41
+  tone(output, a4);
+    delay(quarter);
+//quarter rest and eighth rest 
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(eighth);
+//quarter note
   tone(output, a4);
     delay(quarter);
   noTone(output);
     delay(smallbreak);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
 
+//measure 42
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, B4);
+    delay(eighth);
+  noTone(output_;
+    delay(smallbreak);
+//double sixteenth
+  tone(output, B4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, B4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+//dotted quarter note
+  tone(output, B4);
+    delay(dotquarter);
+  noTone(output);
+    delay(smallbreak)
+//eighth note
+  tone(output, B4);
+    delay(eighth);
+  noTone(output_;
+    delay(smallbreak);
+
+//measure 43
+//quarter note
+  tone(output, B4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak)
+//double sixteenth
+  tone(output, B4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, B4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+//triplet
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, a4);
+    delay(eihgth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, G4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+//double sixteenth
+  tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 44
+//eighth note
+  tone(output, a4):
+    delay(eighth);
+  noTone(output):
+    delay(smallbreak);
+//quarter note
+  tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak):
+//eight note and quarter note
+  tone(output, a4):
+    delay(eighth);
+  noTone(output):
+    delay(smallbreak);
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak):
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, E4):
+    delay(eighth);
+  noTone(output):
+    delay(smallbreak);
 
 }
 

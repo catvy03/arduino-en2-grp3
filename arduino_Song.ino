@@ -85,7 +85,7 @@ for (int i = 0; i< 3; i++){}
   tone(output, B4);
     delay(dotquarter);
   noTone(output);
-    delay(smallbreak)
+    delay(smallbreak);
 //quarter rest
   noTone(output);
     delay(quarter);
@@ -97,7 +97,7 @@ for (int i = 0; i< 3; i++){}
   noTone(output);
     delay(tripletbreak);
   tone(output, a4);
-    delay(eihgth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, a4);
@@ -145,7 +145,7 @@ for (int i = 0; i< 3; i++){}
 //eighth note
   tone(output, B4);
     delay(eighth);
-  noTone(output_;
+  noTone(output);
     delay(smallbreak);
 //double sixteenth
   tone(output, B4);
@@ -160,11 +160,11 @@ for (int i = 0; i< 3; i++){}
   tone(output, B4);
     delay(dotquarter);
   noTone(output);
-    delay(smallbreak)
+    delay(smallbreak);
 //eighth note
   tone(output, B4);
     delay(eighth);
-  noTone(output_;
+  noTone(output);
     delay(smallbreak);
 
 //measure 43
@@ -172,7 +172,7 @@ for (int i = 0; i< 3; i++){}
   tone(output, B4);
     delay(quarter);
   noTone(output);
-    delay(smallbreak)
+    delay(smallbreak);
 //double sixteenth
   tone(output, B4);
     delay(sixteenth);
@@ -188,7 +188,7 @@ for (int i = 0; i< 3; i++){}
   noTone(output);
     delay(tripletbreak);
   tone(output, a4);
-    delay(eihgth);
+    delay(eighth);
   noTone(output);
     delay(tripletbreak);
   tone(output, G4);
@@ -207,35 +207,186 @@ for (int i = 0; i< 3; i++){}
 
 //measure 44
 //eighth note
-  tone(output, a4):
+  tone(output, a4);
     delay(eighth);
-  noTone(output):
+  noTone(output);
     delay(smallbreak);
 //quarter note
   tone(output, G4);
     delay(quarter);
   noTone(output);
-    delay(smallbreak):
+    delay(smallbreak);
 //eight note and quarter note
-  tone(output, a4):
+  tone(output, a4);
     delay(eighth);
-  noTone(output):
+  noTone(output);
     delay(smallbreak);
   tone(output, a4);
     delay(quarter);
   noTone(output);
-    delay(smallbreak):
+    delay(smallbreak);
 //eighth rest
   noTone(output);
     delay(eighth);
 //eighth note
-  tone(output, E4):
+  tone(output, E4);
     delay(eighth);
-  noTone(output):
+  noTone(output);
+    delay(smallbreak);
+  
+//measure 45
+//eighth note
+  tone(output, F4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, E4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double eighth note
+  tone(output, D4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, D4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//dotted quarter note
+  tone(output, F4);
+    delay(dotquarter);
+  noTone(output);
     delay(smallbreak);
 
-}
+//measure 46
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+   tone(output, F4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak); 
+//double sixteenth
+ tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+//quarter note
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth and quarter
+ tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, C4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
 
+//measure 47
+  tone(output, C4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//two quarter rest and eighth rest
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, C4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 48
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth and quarter
+ tone(output, a4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, G4);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+
+//measure 49
+  tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//quarter rest
+  noTone(output);
+    delay(quarter);
+//half rest
+  noTone(output);
+    delay(half);
+
+//measure 50
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth 
+ tone(output, C5);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, a4);
+    delay(sixteenth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth
+ tone(output, C5);
+    delay(sixteenth);
+  noTone(output);
+    delay(halfsixteenth);
+  tone(output, a4);
+    delay(sixteenth);
+  noTone(output);
+    delay(smallbreak);
+}
 void loop() {
   // put your main code here, to run repeatedly:
 

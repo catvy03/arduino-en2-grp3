@@ -15,7 +15,7 @@ Notes chart:
 //outputs
 int output = 13;
 //tempo
-int maintempo = 8000;
+int maintempo = 8576;
 int tempo = 0.25 * maintempo;
 //timings
 int whole = tempo;

@@ -111,13 +111,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth and quarter
   tone(output, a4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, a4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 
 //measure 41
   tone(output, a4);
@@ -149,13 +149,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth
   tone(output, B4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, B4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 //dotted quarter note
   tone(output, B4);
     delay(dotquarter);
@@ -175,13 +175,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth
   tone(output, B4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, B4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 //triplet
   tone(output, B4);
     delay(eighth);
@@ -197,11 +197,11 @@ for (int i = 0; i< 3; i++){}
     delay(tripletbreak);
 //double sixteenth
   tone(output, G4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, G4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 
@@ -271,13 +271,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak); 
 //double sixteenth
  tone(output, G4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, G4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 //quarter note
   tone(output, a4);
     delay(quarter);
@@ -285,13 +285,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth and quarter
  tone(output, G4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, C4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 
 //measure 47
   tone(output, C4);
@@ -334,13 +334,13 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth and quarter
  tone(output, a4);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, G4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
 
 //measure 49
   tone(output, G4);
@@ -365,11 +365,11 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth 
  tone(output, C5);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, a4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 //quarter note
@@ -379,11 +379,11 @@ for (int i = 0; i< 3; i++){}
     delay(smallbreak);
 //double sixteenth
  tone(output, C5);
-    delay(sixteenth);
+    delay(quarter);
   noTone(output);
-    delay(halfsixteenth);
+    delay(smallbreak);
   tone(output, a4);
-    delay(sixteenth);
+    delay(eighth);
   noTone(output);
     delay(smallbreak);
 }

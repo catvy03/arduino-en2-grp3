@@ -1,0 +1,852 @@
+int a4 = 440;
+int Bb4 = 466.24;
+int B4 = 493.92;
+int C4 = 523.2;
+int CS4 = 554.4;
+int D4 = 587.36;
+int Eb4 = 622.24;
+int E4 = 659.2;
+int F4 = 698.4;
+int FS4 = 740;
+int G4 = 392;
+int GS4 = 415.36;
+
+int a5 = 880;
+int Bb5 = 932.48;
+int B5 = 987.84;
+int C5 = 1064.4;
+int CS5 = 1108.8;
+int D5 = 1174.72;
+int Eb5 = 1244.48;
+int E5 = 1318.4;
+int F5 = 1398.8;
+int FS5 = 1480;
+int G5 = 784;
+int GS5 = 830.72;
+
+int output = 8;
+int maintempo = 8576;
+int tempo = 0.25 * maintempo;
+
+int whole = tempo;
+int half = tempo / 2;
+int quarter = tempo / 4;
+int eighth = tempo / 8;
+int sixteenth = tempo / 16;
+int dothalf = 1.5 * half;
+int dotquarter = 1.5 * quarter;
+int doteighth = 1.5 * eighth;
+int dotsixteenth = 1.5 * sixteenth;
+int smallbreak = 200;
+int tripletbreak = eighth / 3;
+int halfsixteenth = sixteenth / 2;
+
+
+void setup() {
+ for (int i = 0; i < 3; i++){}
+//measure 1
+noTone(output);
+  delay(eighth);
+tone(output,E4);
+  delay(eighth);
+tone(output,G5);
+  delay(eighth);
+tone(output,C5);
+  delay(eighth);
+tone(output,D5);
+  delay(eighth);
+tone(output,Eb5);
+  delay(eighth);
+tone(output,E5);
+  delay(quarter);
+//measure 2
+tone(output,C5);
+  delay(quarter);
+tone(output,a5);
+  delay(quarter);
+tone(output,Eb5);
+  delay(quarter);
+tone(output,D5);
+  delay(quarter);
+//measure 3
+tone(output,C5);
+  delay(quarter);
+tone(output,G5);
+  delay(quarter);
+tone(output,FS4);
+  delay(quarter);
+tone(output,F4);
+  delay(dotquarter);
+//measure 4
+tone(output,E4);
+  delay(half);
+tone(output,C4);
+  delay(quarter);
+tone(output,Eb4);
+  delay(half);
+tone(output,B4);
+  delay(quarter);
+//measure 5
+tone(output,D4);
+  delay(half);
+tone(output,Bb4);
+  delay(quarter);
+tone(output,Eb4);
+  delay(half);
+tone(output,B4);
+  delay(quarter);
+//measure 6
+tone(output,E4);
+  delay(half);
+tone(output,C4);
+  delay(quarter);
+tone(output,Eb4);
+  delay(half);
+tone(output,B4);
+  delay(quarter);
+//measure 7
+tone(output,D4);
+  delay(half);
+tone(output,Bb4);
+  delay(quarter);
+tone(output,Eb4);
+  delay(half);
+tone(output,B4);
+  delay(quarter);
+//measure 8
+tone(output,E4);
+  delay(eighth);
+tone(output,G5);
+  delay(quarter);
+tone(output,E4);
+  delay(eighth);
+tone(output,a5);
+  delay(quarter);
+tone(output,G5);
+  delay(eighth);
+//measure 9
+tone(output,E4);
+  delay(dotquarter);
+noTone(output);
+  delay(quarter);
+noTone(output);
+  delay(half);
+//measure 10
+noTone(output);
+  delay(eighth);
+tone(output,a5);
+  delay(eighth);
+tone(output,C5);
+  delay(eighth);
+tone(output,a5);
+  delay(eighth);
+tone(output,C5);
+  delay(quarter);
+tone(output,a5);
+  delay(eighth);
+tone(output,G4);
+  delay(dotquarter);
+//measure 11
+noTone(output);
+  delay(quarter);
+noTone(output);
+  delay(half);
+//measure 12
+noTone(output);
+  delay(eighth);
+tone(output,a5);
+  delay(eighth);
+tone(output,F4);
+  delay(eighth);
+tone(output,G5);
+  delay(quarter);
+tone(output,C4);
+  delay(dotquarter);
+//measure 13
+noTone(output);
+  delay(eighth);
+tone(output,B5);
+  delay(eighth);
+noTone(output);
+  delay(smallbreak);
+tone(output,B5);
+  delay(eighth);
+tone(output,C5);
+  delay(quarter);
+tone(output,a5);
+  delay(eighth);
+tone(output,G5);
+  delay(quarter);
+tone(output,C5);
+  delay(quarter);
+
+//measure 14
+tone(output,G5);
+    delay(eighth);
+tone(output,a5);
+    delay(quarter);
+tone(output,E4);
+    delay(eighth);
+tone(output,C4);
+    delay(eighth);
+tone(output,E4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+//measure 15
+tone(output,E4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    elay(dotquarter);
+noTone(output);
+    delay(dotquarter);
+//measure 16
+tone(output,a5);
+    delay(eighth);
+tone(output,B5);
+    delay(eighth);
+tone(output,D5);
+    delay(eighth);
+tone(output,C5);
+    delay(eighth);
+tone(output,G5);
+    delay(eighth);
+tone(output,E4);
+    delay(eighth);
+tone(output,C4);
+    delay(eighth);
+//measure 17
+tone(output,Eb4);
+    delay(eighth);
+tone(output,E4);
+    delay(quarter);
+tone(output,C4);
+    delay(quarter);
+tone(output,a5);
+    delay(quarter);
+tone(output,C5);
+    delay(dotquarter);
+//measure 18
+tone(output,a5);
+    delay(eighth);
+tone(output,G4);
+    delay(eighth);
+tone(output,E4);
+    delay(eighth);
+tone(output,C4);
+    delay(quarter);
+tone(output,E4);
+    delay(dotquarter);
+//measure 19
+noTone(output);
+    delay(dotquarter);
+tone(output,C5);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(dotquarter);
+//measure 20
+tone(output,a5);
+    delay(eighth);
+tone(output,G5);
+    delay(eighth);
+tone(output,C5);
+    delay(quarter);
+tone(output,a5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,a5);
+    delay(dotquarter);
+//measure 21
+noTone(output);
+    delay(quarter);
+noTone(output);
+    delay(half);
+//measure 22
+noTone(output);
+    delay(whole);
+//measure 23
+noTone(output);
+    delay(whole);
+//measure 24
+tone(output,E4);
+    delay(eighth);
+tone(output,G5);
+    delay(quarter);
+tone(output,E4);
+    delay(eighth);
+tone(output,a5);
+    delay(quarter);
+tone(output,G5);
+    delay(eighth);
+tone(output,E4);
+    delay(dotquarter);
+//measure 25
+noTone(output);
+    delay(quarter);
+noTone(output);
+    delay(half);
+//measure 26
+noTone(output);
+    delay(eighth);
+tone(output,a5);
+    delay(eighth);
+tone(output,C5);
+    delay(eighth);
+tone(output,a5);
+    delay(eighth);
+tone(output,C5);
+    delay(quarter);
+tone(output,a5);
+    delay(eighth);
+tone(output,G5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+
+//Brayan's part
+tone(output, G4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+noTone(output);
+  delay(quarter);
+noTone(output);
+  delay(half);
+noTone(output);
+  delay(eighth);
+tone(output, a4);
+  delay(eighth);
+noTone(output);
+  delay(smallbreak);
+tone(output,a4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,F4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,G4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,G4);
+  delay(eighth);
+noTone(output);
+  delay(smallbreak);
+tone(output,C4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,B4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,B4);
+  delay(eighth);
+noTone(output);
+  delay(smallbreak);
+tone(output,B4);
+  delay(quarter);
+noTone(output);
+  delay(smallbreak);
+tone(output,C5);
+  delay(eighth);
+noTone(output);
+  delay(smallbreak);
+tone(output,C5);
+  delay(quarter)
+noTone(output);
+  delay(smallbreak);
+noTone(output);
+    delay(quarter);
+noTone(output);
+    delay(quarter); 
+tone(output,a4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,G4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,a4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,G4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output)
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,D4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+noTone(output);
+    delay(quarter);
+tone(output,a4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,a4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,B4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,D5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(quarter);
+noTone(output)
+    delay(smallbreak);
+tone(output,G4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,G4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,B4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,B4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,a4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C5);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,a4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,G4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,C4);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(eighth);
+noTone(output);
+    delay(smallbreak);
+tone(output,E4);
+    delay(quarter);
+noTone(output);u
+    delay(smallbreak);
+noTone(output);
+    delay(quarter);
+tone(output,C5);
+    delay(quarter);
+noTone(output);
+    delay(smallbreak);
+
+//measure 39
+//triplet
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//triplet
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);    
+//eighth note
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//dotted quarter note
+  tone(output, B4);
+    delay(dotquarter);
+  noTone(output);
+    delay(smallbreak);
+//quarter rest
+  noTone(output);
+    delay(quarter);
+
+//measure 40
+//triplet
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth and quarter
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 41
+  tone(output, a4);
+    delay(quarter);
+//quarter rest and eighth rest 
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(eighth);
+//quarter note
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 42
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth
+  tone(output, B4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//dotted quarter note
+  tone(output, B4);
+    delay(dotquarter);
+  noTone(output);
+    delay(smallbreak);
+//eighth note
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 43
+//quarter note
+  tone(output, B4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth
+  tone(output, B4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//triplet
+  tone(output, B4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+  tone(output, G4);
+    delay(eighth);
+  noTone(output);
+    delay(tripletbreak);
+//double sixteenth
+  tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, G4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 44
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//eight note and quarter note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, E4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+  
+//measure 45
+//eighth note
+  tone(output, F4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, E4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double eighth note
+  tone(output, D4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, D4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//dotted quarter note
+  tone(output, F4);
+    delay(dotquarter);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 46
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+   tone(output, F4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak); 
+//double sixteenth
+ tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, G4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth and quarter
+ tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, C4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 47
+  tone(output, C4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//two quarter rest and eighth rest
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(quarter);
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, C4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 48
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth and quarter
+ tone(output, a4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, G4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
+//measure 49
+  tone(output, G4);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//quarter rest
+  noTone(output);
+    delay(quarter);
+//half rest
+  noTone(output);
+    delay(half);
+
+//measure 50
+//eighth rest
+  noTone(output);
+    delay(eighth);
+//eighth note
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth 
+ tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+//quarter note
+  tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+//double sixteenth
+ tone(output, C5);
+    delay(quarter);
+  noTone(output);
+    delay(smallbreak);
+  tone(output, a4);
+    delay(eighth);
+  noTone(output);
+    delay(smallbreak);
+
